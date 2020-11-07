@@ -12,6 +12,7 @@ $email = $_POST['Email'];
 $phone = $_POST['PhoneNumber'];
 $upassword = $_POST['Password'];
 
+$upassword = sha1($upassword);
 $conn = mysqli_connect($servername, $username, $password, $dbname);
  
 if(!$conn){
