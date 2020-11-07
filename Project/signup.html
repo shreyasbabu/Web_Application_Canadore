@@ -6,7 +6,7 @@
 	<script src="js/signup.js"></script>
 </head>
 <body>
-	<form class="p" action="insert.php" method="post">
+	<form class="p center" action="insert.php" method="post">
 		<div class="row">
 			<div class="label">
 				<label style="color: red;">* </label><label>First Name</label>
@@ -45,7 +45,7 @@
 				<label>Email</label>
 			</div>
 			<div class="input-container">
-				<input type="text" id="email" size="30" name="Email" onblur="eMail('email')">
+				<input type="email" class="form-control" id="email" placeholder="name@example.com" size="30" name="Email" onblur="eMail('email')">
 			</div>
 			<div class="errorAlign">
 				<p id="errorEmail" class="error">Please enter correct Email</p>
