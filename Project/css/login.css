@@ -11,19 +11,15 @@ body {
   -o-background-size: cover;
 }
 
-body {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-  align-items: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background-color: #f5f5f5;
+.place-center{
+	 text-align: center;
 }
 
-
 .align{
-  text-align: center;
+
+    position: center;
+    bottom: 30%; /* Footer Height */
+    width: 40%;
 }
 
 .center {
@@ -32,6 +28,16 @@ body {
   width: 30%;
   border: 5px solid #73AD21;
   padding: 10px;
+}
+
+body {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f5f5f5;
 }
 
 .form-message {

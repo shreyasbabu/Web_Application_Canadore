@@ -80,42 +80,23 @@ mysqli_close($conn);
  <?php
  if($flag == 0){
   ?>
-
-
-  <form class="center">
-
-    <div class ="form-message alert alert-success alert-dismissible fade show sticky-top" role="alert">
+      <div class ="align form-message alert alert-success alert-dismissible fade show" role="alert">
       <h1>Registered Sucessfully</h1>
     </div>
-    <div class="form-signin">
-      <img class="mb-4" src="images/logo.png" alt="" width="72" height="72">
-      <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
-      <label for="inputEmail" class="sr-only">Email address</label>
-      <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-      <label for="inputPassword" class="sr-only">Password</label>
-      <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-      <div class="checkbox mb-3">
-        <label>
-          <input type="checkbox" value="remember-me"> Remember me
-        </label>
-      </div>
-      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-      <p class="mt-5 mb-3 text-muted">&copy; hstworld.com 2020</p>
-    </div>
+  <?php
+  require_once("login.php");
+  ?>
 
-
-  </form>
   <?php
 }
 ?>
+
 <?php 
-
-
 if($flag == 1){
   ?>
-  <div class="center align alert alert-warning alert-dismissible fade show" role="alert">
-   <h1>User Already Exists</h1>
-   <button type="button" class="btn btn-danger" onclick="location.href='signup.html'">Go Back to Sign Up</button>
+  <div class="center place-center alert alert-warning alert-dismissible fade show" role="alert">
+   <h1 >User Already Exists</h1>
+   <button type="button" class=" btn btn-danger" onclick="location.href='signup.html'">Go Back to Sign Up</button>
  </div>
  <?php
 }
