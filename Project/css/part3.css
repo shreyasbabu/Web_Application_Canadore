@@ -1,0 +1,98 @@
+body {
+    background-color: black;
+ }
+/* space between each and individual card */
+.card-component
+{
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-right: 45px;
+    margin-left: 45px;
+}
+   
+/* giving th ewidth of the card component below slide show */
+
+.primary-width
+ {
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+/* height of images in slide show */
+
+.slide-images
+{
+    
+    height: 500px;
+}
+
+/* max-width:950px
+    conatiner on slide show element
+    give top margin here(in the conatiner class) for slide show
+    ALso give left margin here for left column. 
+*/
+.envelope
+{
+    max-width:75%; 
+    margin-left:275px;
+    margin-top: 50px;
+}
+
+
+/*For making image size same */
+.img-size 
+{
+    height: 191px;
+}
+
+.welcomePage {
+    
+    display: flex;
+    justify-content: center;
+    margin-top: -1px;
+    margin-bottom: 125px;
+ } 
+
+
+
+.welcomePage .button {
+    display:inline-block;
+    color: white;
+    padding: 10px;
+    size:10px;
+    border-radius: 4px;
+    background-color: orange;
+    cursor: pointer;
+    width: 100px;
+    font-size: 15px;
+    border: none;
+    text-align: center;
+    margin: 10px;
+    }
+
+.welcomePage .button span {
+    
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    transition: 0.5s;
+    }
+.welcomePage .button span:after{
+    content:'\00bb';
+    opacity:0;
+    top:0;
+    transition: 0.5s;
+    right: -20px;
+    position: absolute;
+}
+
+.welcomePage .button:hover span{
+padding-right: 25px;
+}
+
+.welcomePage .button:hover span:after {
+    opacity:1;
+    right: 0;
+}
