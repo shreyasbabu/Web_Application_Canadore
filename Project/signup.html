@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title><b>Signup</b></title>
+	<title>Sign-up</title>
 	<link rel="stylesheet" type="text/css" href="css/signup.css">
 	<script src="js/signup.js"></script>
 </head>
@@ -9,10 +9,10 @@
 	<form class="p" action="insert.php" method="post">
 		<div class="row">
 			<div class="label">
-				<label>First Name</label>
+				<label style="color: red;">* </label><label>First Name</label>
 			</div>
 			<div class="input-container">
-				<input type="text" id="fname" size="30" name="FirstName" class="borders" onblur="firstName('fname')">
+				<input type="text" id="fname" size="30" name="FirstName" class="borders" onblur="firstName('fname')" required>
 			</div>
 			<div class="errorAlign">
 				<p id="errorFname" class="error">Please enter correct First Name</p>
@@ -20,7 +20,7 @@
 		</div>
 		<div class="row">
 			<div class="label">
-				<label>Last Name</label>
+			<label>Last Name</label>
 			</div>
 			<div class="input-container"> 
 				<input type="text" id="lname" size="30" name="LastName" onblur="lastName('lname')">
@@ -81,7 +81,7 @@
 				<input type="password" id="cpswd" size="30" onblur="CPswd('cpswd')">
 			</div>
 			<div class="errorAlign">
-				<p id="errorCpswd" class="error">Password didnot match</p>
+				<p id="errorCpswd" class="error">Password did not match</p>
 			</div>
 		</div>
 		<button class="button shadow" value="submit" type="submit">Sign Up</button>

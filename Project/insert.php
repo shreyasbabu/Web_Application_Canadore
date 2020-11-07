@@ -63,7 +63,7 @@ mysqli_close($conn);
 
 
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -95,11 +95,16 @@ mysqli_close($conn);
   		?>
   		<div class="alert alert-warning alert-dismissible fade show" role="alert">
   			<h1>User Already Exists</h1>
-  			<button href ="singup.html">Go Back to Sign Up</button>
+  			<button class="button" onclick="location.href='signup.html'">Go Back to Sign Up</button>
   		</div>
   		<?php
   	}
   	?>
+
+  	<?php
+  	require_once("login.php");
+  	?>
+
 	
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
