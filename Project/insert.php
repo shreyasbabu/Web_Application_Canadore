@@ -76,13 +76,13 @@ mysqli_close($conn);
     <title>HSTWorld</title>
   </head>
   <body>
-
   	<?php
   	if($flag == 0){
   		?>
   		<div class="alert alert-success alert-dismissible fade show" role="alert">
+  			<header>
   			<h1>Registered Sucessfully</h1>
-  			
+  			</header>
 
   		</div>
   		<?php
@@ -94,13 +94,14 @@ mysqli_close($conn);
   	if($flag == 1){
   		?>
   		<div class="alert alert-warning alert-dismissible fade show" role="alert">
+  			<header>
   			<h1>User Already Exists</h1>
   			<button class="button" onclick="location.href='signup.html'">Go Back to Sign Up</button>
+  			</header>
   		</div>
   		<?php
   	}
   	?>
-
   	<?php
   	require_once("login.php");
   	?>
