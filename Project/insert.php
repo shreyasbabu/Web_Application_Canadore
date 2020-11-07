@@ -14,20 +14,47 @@ $upassword = $_POST['Password'];
 
 $conn = mysqli_connect($servername, $username, $password, $dbname);
  
-
 if(!$conn){
     die("ERROR: Could not connect. " . mysqli_connect_error());
 }
 
-$sql = "INSERT INTO `users` (`first_name`, `last_name`, `username`, `email`, `password`, `phone`) 
-VALUES ('$firstname', '$lastname', '$uusername', '$email','$upassword','$phone')";
+
+ if(!UserExists($conn,$uusername))
+ {
+ 	$sql = "INSERT INTO `users` (`first_name`, `last_name`, `username`, `email`, `password`, `phone`) 
+	VALUES ('$firstname', '$lastname', '$uusername', '$email','$upassword','$phone')";
 /*$sql = "INSERT INTO `signin`(`FirstName`, `LastName`, `UserName`, `Email`, `PhoneNumber`, `Password`) VALUES ([value-1],[value-2],[value-3],[value-4],[value-5],[value-6])";*/
-}
-if(mysqli_query($conn, $sql)){
+if(mysqli_query($conn, $sql))
+	{
     echo "Records added successfully.";
-} else{
+	} 
+	else{
     echo "ERROR: Could not able to execute $sql. " . mysqli_error($conn);
-} 
+	}
+ }
+ else
+ {
+ 	echo "User Already Exists Please Login";
+ }
+}
+	
+function UserExists($conn,$user)
+{
+	$usql = "SELECT username FROM users where username = '$user'";
+	$result = mysqli_query($conn,$usql);
+	if(mysqli_num_rows($result) > 0)
+	{
+		return TRUE;
+		mysqli_free_result($result);
+		
+	}
+	else
+	{
+		return FALSE;
+		mysqli_free_result($result);
+	}
+}
+
 // Close connection
 mysqli_close($conn);
 ?>
