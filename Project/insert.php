@@ -1,8 +1,10 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "hstworld";
+
+require_once("databaseclass.php");
+
+$object = new Database();
+$conn = $object->get_connection();
+
 $flag = 0;
 
 if (isset($_POST)) {
@@ -14,14 +16,9 @@ if (isset($_POST)) {
   $upassword = $_POST['Password'];
 
   $upassword = sha1($upassword);
-  $conn = mysqli_connect($servername, $username, $password, $dbname);
+  //$conn = mysqli_connect($servername, $username, $password, $dbname);
 
-  if(!$conn){
-    die("ERROR: Could not connect. " . mysqli_connect_error());
-  }
-
-
-  if(!UserExists($conn,$uusername))
+  if(!UserExists($conn,$email))
   {
     $sql = "INSERT INTO `users` (`first_name`, `last_name`, `username`, `email`, `password`, `phone`) 
     VALUES ('$firstname', '$lastname', '$uusername', '$email','$upassword','$phone')";
@@ -40,9 +37,9 @@ if (isset($_POST)) {
  }
 }
 
-function UserExists($conn,$user)
+function UserExists($conn,$email)
 {
-	$usql = "SELECT username FROM users where username = '$user'";
+	$usql = "SELECT username FROM users where email = '$email'";
 	$result = mysqli_query($conn,$usql);
 	if(mysqli_num_rows($result) > 0)
 	{
@@ -58,7 +55,7 @@ function UserExists($conn,$user)
 }
 
 // Close connection
-mysqli_close($conn);
+$object->close_connection();
 ?>
 
 

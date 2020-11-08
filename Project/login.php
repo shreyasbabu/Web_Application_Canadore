@@ -1,5 +1,39 @@
-<!doctype html>
-<html lang="en">
+<?php
+require_once("databaseclass.php");
+$object = new Database();
+
+$conn = $object->get_connection();
+
+if(isset($_POST['submit']))
+{
+  if(isset($_POST['email']))
+  {
+     $email = $_POST['email']; 
+   }
+  if(isset($_POST['password']))
+    { 
+      $upassword = $_POST['password'];
+      $upassword = sha1($upassword); 
+    }
+
+    $sql = "SELECT * FROM users WHERE (email = '$email' AND password='$upassword')";
+    $result = mysqli_query($conn,$sql);
+    if(mysqli_num_rows($result) > 0)
+  {
+    echo "Logged in successfully";
+    mysqli_free_result($result);
+    header("Location:Home Page.html");
+  }
+  else
+  {
+    echo "Login Failed";
+    mysqli_free_result($result);
+  }
+
+}
+?>
+
+<!DOCTYPE html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -17,19 +51,19 @@
   <link href="css/login.css" rel="stylesheet">
   </head>
   <body class="text-center">
-    <form class="form-signin center">
+    <form class="form-signin center" method="POST" action="<?=$_SERVER['PHP_SELF'];?>" enctype="multipart/formdata">
   <img class="mb-4" src="images/logo.png" alt="" width="72" height="72">
   <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
   <label for="inputEmail" class="sr-only">Email address</label>
-  <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+  <input type="email" id="inputEmail" class="form-control" placeholder="Email address" name="email" required autofocus>
   <label for="inputPassword" class="sr-only">Password</label>
-  <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+  <input type="password" id="inputPassword" class="form-control" placeholder="Password" name="password" required>
   <div class="checkbox mb-3">
     <label>
       <input type="checkbox" value="remember-me"> Remember me
     </label>
   </div>
-  <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+  <button class="btn btn-lg btn-primary btn-block" type="submit" name="submit">Sign in</button>
   <p class="mt-5 mb-3 text-muted">&copy; hstworld.com 2020</p>
 </form>
 </body>
