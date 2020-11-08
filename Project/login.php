@@ -22,7 +22,10 @@ if(isset($_POST['submit']))
     if(mysqli_num_rows($result) > 0)
     {
     mysqli_free_result($result);
-    header("Location:Home Page.html");
+    session_start();
+    $_SESSION['email'] = $email;
+    $_SESSION['active'] = 1;
+    header("Location:profile.php");
     }
     else
     {

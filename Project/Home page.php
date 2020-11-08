@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <!-- Required meta tags -->
@@ -22,23 +22,22 @@
         <div class = "collapse navbar-collapse" id = "navbarResponsive">
             <ul class = "navbar-nav ml-auto">
                 <li class = "nav-item activ">
-                    <a class = "nav-link" href="Home Page.html">Home</a>
+                    <a class = "nav-link" href="Home Page.php">Home</a>
                 </li>
                 <li class = "nav-item activ">
-                    <a class = "nav-link" href="Home Page.html">About Us</a>
+                    <a class = "nav-link" href="Home Page.php">About Us</a>
                 </li>
                 <li class = "nav-item activ">
-                    <a class = "nav-link" href="Home Page.html">Contact Us</a>
+                    <a class = "nav-link" href="Home Page.php">Contact Us</a>
                 </li>
                 <li class = "nav-item activ">
-                    <a class = "nav-link" href="Home Page.html">Renting Services</a>
+                    <a class = "nav-link" href="Home Page.php">Renting Services</a>
                 </li>
             </ul>
         </div>
     </div>
     <button class="button" style="vertical-align: middle"><span><a href="login.php">Login</a></span></button>
     <button class="button" style="vertical-align: middle"><span><a href="signup.html">Signup</a></span></button>
-    
 </nav>
 
 <!-- Search Bar -->
