@@ -1,3 +1,7 @@
+<?php 
+session_start();
+ ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,19 +29,30 @@
                     <a class = "nav-link" href="Home Page.php">Home</a>
                 </li>
                 <li class = "nav-item activ">
-                    <a class = "nav-link" href="Home Page.php">About Us</a>
+                    <a class = "nav-link" href="aboutus.php">About Us</a>
                 </li>
                 <li class = "nav-item activ">
-                    <a class = "nav-link" href="Home Page.php">Contact Us</a>
-                </li>
-                <li class = "nav-item activ">
-                    <a class = "nav-link" href="Home Page.php">Renting Services</a>
+                    <a class = "nav-link" href="contactus.php">Contact Us</a>
                 </li>
             </ul>
         </div>
     </div>
+    <?php
+     if(isset($_SESSION['email']) && isset($_SESSION['active']))
+    {
+    ?>
+    <span style="color: #525252"><?php echo $_SESSION['email'] ?></span>
+    <button class="button" style="vertical-align: middle" onclick="location.href='logout.php'"><span>Logout</span></button>
+    <?php
+    }
+    else
+    {    
+    ?>
     <button class="button" style="vertical-align: middle" onclick="location.href='login.php'"><span>Login</span></button>
     <button class="button" style="vertical-align: middle" onclick="location.href='signup.html'"><span>Signup</span></button>
+    <?php
+  }
+  ?>
 </nav>
 
 <!-- Search Bar -->
@@ -46,7 +61,7 @@
       <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-      <a class="navbar-brand" href="apartments.html">House Renting</a>
+      <a class="navbar-brand" href="apartments.php">House Renting</a>
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -99,10 +114,10 @@
       <div class="col">
         <!-- Menu  -->
         <div class="nav flex-column nav-pills"  role="tablist" aria-orientation="vertical">
-            <a class="nav-link active"   href="apartments.html" aria-selected="true" width="30%">Apartments</a>
-            <a class="nav-link"    href="Condos.html" role="tab"  aria-selected="false">Condos</a>
-            <a class="nav-link"    href="Town House.html" role="tab"  aria-selected="false">Town House</a>
-            <a class="nav-link"    href="Rooms.html" role="tab"  aria-selected="false">Rooms</a>
+            <a class="nav-link active"   href="apartments.php" aria-selected="true" width="30%">Apartments</a>
+            <a class="nav-link"    href="Condos.php" role="tab"  aria-selected="false">Condos</a>
+            <a class="nav-link"    href="Town House.php" role="tab"  aria-selected="false">Town House</a>
+            <a class="nav-link"    href="Rooms.php" role="tab"  aria-selected="false">Rooms</a>
         </div>
 
     </div>

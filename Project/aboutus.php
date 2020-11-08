@@ -1,11 +1,6 @@
 <?php
     session_start();
-    if(!isset($_SESSION['email']) && !isset($_SESSION['active']))
-    {
-        header("Location:logout.php");
-    }
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -19,11 +14,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 </head>
-<body style="background-color:black">
+<body style="background-color:#80ba98">
     <!-- Navigation -->
     <nav class = "navbar navbar-expand-md navbar-light sticky-top welcomePage" style="background-color: #baefff;" >
         <div class = "container-fluid">
-            <a class = "navbar-brand" href = "profile.php"> <img src ="images/logo.png" width = "100 px" height = "100 px"></a>
+            <a class = "navbar-brand" href = "Home Page.php"> <img src ="images/logo.png" width = "100 px" height = "100 px"></a>
             <button class = "navbar-toggler" type = "button" data-toggle="collapse" data-target = "#navbarResponsive" aria-controls="navbarResponsive" aria-expanded = "false" 
             aria-label = "Toggle Navigation">
             <span class = "navbar-toggler-icon"></span>
@@ -42,80 +37,28 @@
             </ul>
         </div>
     </div>
+    <?php
+     if(isset($_SESSION['email']) && isset($_SESSION['active']))
+    {
+    ?>
     <span style="color: #525252"><?php echo $_SESSION['email'] ?></span>
     <button class="button" style="vertical-align: middle" onclick="location.href='logout.php'"><span>Logout</span></button>
+    <?php
+    }
+    else
+    {    
+    ?>
+    <button class="button" style="vertical-align: middle" onclick="location.href='login.php'"><span>Login</span></button>
+    <button class="button" style="vertical-align: middle" onclick="location.href='signup.html'"><span>Signup</span></button>
+    <?php
+	}
+	?>
 </nav>
-
-<!-- Search Bar -->
-<nav class="navbar navbar-expand-lg navbar-light m-3" style="background-color: #f03939ec;">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-      <a class="navbar-brand" href="apartments.php">House Renting</a>
-      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-        <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Price
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-      <label class="center">$1000  <input type="checkbox"> </label>
-     <label class="center">$2000  <input type="checkbox"> </label>
-    <label class="center">$3000  <input type="checkbox"> </label>
-
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Location
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-      <label class="center">Toranto  <input type="checkbox"> </label>
-     <label class="center">Vancover  <input type="checkbox"> </label>
-    <label class="center">Montreal  <input type="checkbox"> </label>
-
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Bed Rooms
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-      <label class="center">1+  <input type="checkbox"> </label>
-     <label class="center">2+  <input type="checkbox"> </label>
-    <label class="center">3+  <input type="checkbox"> </label>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Bath Rooms
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-      <label class="center">0.5  <input type="checkbox"> </label>
-     <label class="center">1  <input type="checkbox"> </label>
-    <label class="center">2  <input type="checkbox"> </label>
-
-      </li>
-</ul>
-<form class="form-inline my-2 my-lg-0">
-    <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
-</form>
+<div class="audiv">
+<h1 style="color: white;text-align: center;">About Us</h1>	
 </div>
-</nav>
-
 <div class="container-fluid">
-    <div class="row">
-      <div class="col">
-        <!-- Menu  -->
-        <div class="nav flex-column nav-pills"  role="tablist" aria-orientation="vertical">
-            <a class="nav-link active"   href="apartments.php" aria-selected="true" width="30%">Apartments</a>
-            <a class="nav-link"    href="Condos.php" role="tab"  aria-selected="false">Condos</a>
-            <a class="nav-link"    href="Town House.php" role="tab"  aria-selected="false">Town House</a>
-            <a class="nav-link"    href="Rooms.php" role="tab"  aria-selected="false">Rooms</a>
-        </div>
-
-    </div>
-    <div class="col-10">
-        <!-- Slide show begins -->
-        <div class="container-fluid ">
-            
+        
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                   <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -142,46 +85,40 @@
               <span class="sr-only">Next</span>
           </a>
       </div>
-      
   </div>
-</div>
-</div>
+  <!-- Card Component Begins -->
 
-<!-- Card Component Begins -->
+<div class="auenvelope primary-width">
 
-<div class="envelope primary-width">
-
-    <div class="card card-component" style="width: 18rem;">
-        <img class="card-img-top img-size" src="images/1.jpg" alt="Card image cap">
+    <div class="card card-component" style="width: 18rem; justify-content: center;text-align: center;">
+        <img class="card-img-top img-size" src="images/tejas.jpg" alt="Card image cap">
         <div class="card-body">
-            <h5 class="card-title">#1777</h5>
-            <p class="card-text font-weight-bold"> $250,000 </p>
+            <h5 class="card-title">Tejasv Goel</h5>
+            <p class="card-text font-weight-bold">Developer</p>
             <!--a href="#" class="btn btn-primary">Go somewhere</a-->
         </div>
     </div>
 
-    <div class="card card-component" style="width: 18rem;">
-        <img class="card-img-top img-size" src="images/2.jpg" alt="Card image cap">
+    <div class="card card-component" style="width: 18rem;justify-content: center;text-align: center;">
+        <img class="card-img-top img-size" src="images/shreyas.jpg" alt="Card image cap">
         <div class="card-body">
-            <h5 class="card-title">#9667</h5>
-            <p class="card-text font-weight-bold font-weight-bold"> $750,000</p>
+            <h5 class="card-title">Shreyas Babu</h5>
+            <p class="card-text font-weight-bold font-weight-bold"> Lead Front End Developer</p>
             <!--a href="#" class="btn btn-primary">Go somewhere</a-->
         </div>
     </div>
 
-    <div class="card card-component" style="width: 18rem;">
-        <img class="card-img-top img-size" src="images/3.jpg" alt="Card image cap">
+    <div class="card card-component" style="width: 18rem; justify-content: center;text-align: center;">
+        <img class="card-img-top img-size" src="images/huzaifa.jpg" alt="Card image cap">
         <div class="card-body">
-            <h5 class="card-title">#2555</h5>
-            <p class="card-text font-weight-bold font-weight-bold"> $550,000</p>
+            <h5 class="card-title">Huzaifa Saboowala</h5>
+            <p class="card-text font-weight-bold font-weight-bold">Lead Back End Developer</p>
             <!-- a href="#" class="btn btn-primary">Go somewhere</a -->
         </div>
     </div>
 
 </div>
-
-</div>
-<!-- Footer -->
+  <!-- Footer -->
 <footer>
     <div class= "container-fluid padding" style="background-color: #baefff;">
         <div class= "row text-center">

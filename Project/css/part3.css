@@ -6,7 +6,7 @@ body {
 {
     display: flex;
     margin-top: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 45px;
     margin-right: 45px;
     margin-left: 45px;
 }
@@ -40,11 +40,23 @@ body {
     margin-top: 50px;
 }
 
+.auenvelope
+{
+    max-width:70%; 
+    margin-left:180px;
+    margin-top: 50px;
+}
+
+.audiv
+{
+    display: flex;
+    justify-content: center;
+}
 
 /*For making image size same */
 .img-size 
 {
-    height: 191px;
+    height: 300px;
 }
 
 .welcomePage {
@@ -106,4 +118,8 @@ padding-right: 25px;
     text-align: left;
     margin-left: 45px;
     font-weight: 600;
+}
+
+#section4{
+    padding-left:30%;
 }
