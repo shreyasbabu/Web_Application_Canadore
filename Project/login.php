@@ -3,6 +3,7 @@ require_once("databaseclass.php");
 $object = new Database();
 
 $conn = $object->get_connection();
+$flag = 0;
 
 if(isset($_POST['submit']))
 {
@@ -19,18 +20,19 @@ if(isset($_POST['submit']))
     $sql = "SELECT * FROM users WHERE (email = '$email' AND password='$upassword')";
     $result = mysqli_query($conn,$sql);
     if(mysqli_num_rows($result) > 0)
-  {
-    echo "Logged in successfully";
+    {
     mysqli_free_result($result);
     header("Location:Home Page.html");
-  }
-  else
-  {
-    echo "Login Failed";
+    }
+    else
+    {
+    $flag = 1;
     mysqli_free_result($result);
   }
 
 }
+
+$object->close_connection();
 ?>
 
 <!DOCTYPE html>
@@ -51,6 +53,17 @@ if(isset($_POST['submit']))
   <link href="css/login.css" rel="stylesheet">
   </head>
   <body class="text-center">
+    <?php
+      if($flag == 1)
+      {
+        $flag = 0;
+    ?>
+      <div class = 'align form-message alert alert-danger alert-dismissible fade show' role='alert'><h4>Incorrect Email ID or Password</h4></div>
+    <?php
+      }
+    ?>
+
+
     <form class="form-signin center" method="POST" action="<?=$_SERVER['PHP_SELF'];?>" enctype="multipart/formdata">
   <img class="mb-4" src="images/logo.png" alt="" width="72" height="72">
   <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
