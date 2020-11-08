@@ -68,7 +68,7 @@ $object->close_connection();
 
 
     <form class="form-signin center" method="POST" action="<?=$_SERVER['PHP_SELF'];?>" enctype="multipart/formdata">
-  <img class="mb-4" src="images/logo.png" alt="" width="72" height="72">
+  <a href="Home Page.php"><img class="mb-4" src="images/logo.png" alt="" width="72" height="72"></a>
   <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
   <label for="inputEmail" class="sr-only">Email address</label>
   <input type="email" id="inputEmail" class="form-control" placeholder="Email address" name="email" required autofocus>

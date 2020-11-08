@@ -21,9 +21,9 @@
 </head>
 <body style="background-color:black">
     <!-- Navigation -->
-    <nav class = "navbar navbar-expand-md navbar-light sticky-top welcomePage" style="background-color: #65EAFFCC;" >
+    <nav class = "navbar navbar-expand-md navbar-light sticky-top welcomePage" style="background-color: #baefff;" >
         <div class = "container-fluid">
-            <a class = "navbar-brand" href = "#"> <img src ="images/logo.png" width = "100 px" height = "100 px"></a>
+            <a class = "navbar-brand" href = "profile.php"> <img src ="images/logo.png" width = "100 px" height = "100 px"></a>
             <button class = "navbar-toggler" type = "button" data-toggle="collapse" data-target = "#navbarResponsive" aria-controls="navbarResponsive" aria-expanded = "false" 
             aria-label = "Toggle Navigation">
             <span class = "navbar-toggler-icon"></span>
@@ -46,7 +46,7 @@
         </div>
     </div>
     <span style="color: #525252"><?php echo $_SESSION['email'] ?></span>
-    <button class="button" style="vertical-align: middle"><span><a href="logout.php">Logout</a></span></button>
+    <button class="button" style="vertical-align: middle" onclick="location.href='logout.php'"><span>Logout</span></button>
 </nav>
 
 <!-- Search Bar -->
@@ -186,7 +186,7 @@
 </div>
 <!-- Footer -->
 <footer>
-    <div class= "container-fluid padding" style="background-color: #65EAFFCC;">
+    <div class= "container-fluid padding" style="background-color: #baefff;">
         <div class= "row text-center">
             <div class = "col-md-4">
                 <img src ="images/logo.png" width = "150 px" height ="100 px">

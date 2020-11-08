@@ -12,9 +12,9 @@
 </head>
 <body style="background-color:black">
     <!-- Navigation -->
-    <nav class = "navbar navbar-expand-md navbar-light sticky-top welcomePage" style="background-color: #65EAFFCC;" >
+    <nav class = "navbar navbar-expand-md navbar-light sticky-top welcomePage" style="background-color: #baefff;" >
         <div class = "container-fluid">
-            <a class = "navbar-brand" href = "#"> <img src ="images/logo.png" width = "100 px" height = "100 px"></a>
+            <a class = "navbar-brand" href = "Home Page.php"> <img src ="images/logo.png" width = "100 px" height = "100 px"></a>
             <button class = "navbar-toggler" type = "button" data-toggle="collapse" data-target = "#navbarResponsive" aria-controls="navbarResponsive" aria-expanded = "false" 
             aria-label = "Toggle Navigation">
             <span class = "navbar-toggler-icon"></span>
@@ -36,8 +36,8 @@
             </ul>
         </div>
     </div>
-    <button class="button" style="vertical-align: middle"><span><a href="login.php">Login</a></span></button>
-    <button class="button" style="vertical-align: middle"><span><a href="signup.html">Signup</a></span></button>
+    <button class="button" style="vertical-align: middle" onclick="location.href='login.php'"><span>Login</span></button>
+    <button class="button" style="vertical-align: middle" onclick="location.href='signup.html'"><span>Signup</span></button>
 </nav>
 
 <!-- Search Bar -->
@@ -177,7 +177,7 @@
 </div>
 <!-- Footer -->
 <footer>
-    <div class= "container-fluid padding" style="background-color: #65EAFFCC;">
+    <div class= "container-fluid padding" style="background-color: #baefff;">
         <div class= "row text-center">
             <div class = "col-md-4">
                 <img src ="images/logo.png" width = "150 px" height ="100 px">

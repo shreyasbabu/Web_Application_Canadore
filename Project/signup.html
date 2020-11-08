@@ -6,6 +6,7 @@
 	<script src="js/signup.js"></script>
 </head>
 <body>
+	<a href ="Home Page.php"> <img src ="images/logo.png" width = "100 px" height = "100 px"></a>
 	<form class="p center" action="insert.php" method="post">
 		<div class="row">
 			<div class="label">
@@ -20,7 +21,7 @@
 		</div>
 		<div class="row">
 			<div class="label">
-			<label>Last Name</label>
+			<label>&nbsp&nbsp&nbspLast Name</label>
 			</div>
 			<div class="input-container"> 
 				<input type="text" id="lname" size="30" name="LastName" onblur="lastName('lname')">
@@ -31,10 +32,10 @@
 		</div>
 		<div class="row">
 			<div class="label">
-				<label>User Name</label>
+				<label style="color: red;">* </label><label>User Name</label>
 			</div>
 			<div class="input-container"> 
-				<input type="text" id="uname" size="30" name="UserName" onblur="userName('uname')">
+				<input type="text" id="uname" size="30" name="UserName" onblur="userName('uname')" required>
 			</div>
 			<div class="errorAlign">
 				<p id="errorUname" class="error">Please enter correct User Name</p>
@@ -42,10 +43,10 @@
 		</div>
 		<div class="row">
 			<div class="label">
-				<label>Email</label>
+				<label style="color: red;">* </label><label>Email</label>
 			</div>
 			<div class="input-container">
-				<input type="email" class="form-control" id="email" placeholder="name@example.com" size="30" name="Email" onblur="eMail('email')">
+				<input type="email" class="form-control" id="email" placeholder="name@example.com" size="30" name="Email" onblur="eMail('email')" required>
 			</div>
 			<div class="errorAlign">
 				<p id="errorEmail" class="error">Please enter correct Email</p>
@@ -53,10 +54,10 @@
 		</div>
 		<div class="row">
 			<div class="label">
-				<label>Phone Number</label>
+				<label style="color: red;">* </label><label>Phone Number</label>
 			</div>
 			<div class="input-container">
-				<input type="text" id="phone" size="30" name="PhoneNumber" onblur="Phn('phone')">
+				<input type="text" id="phone" size="30" name="PhoneNumber" onblur="Phn('phone')" required>
 			</div>
 			<div class="errorAlign">
 				<p id="errorPhn" class="error">Please enter correct Phone Number</p>
@@ -64,10 +65,10 @@
 		</div>
 		<div class="row">
 			<div class="label">
-				<label>Password</label>
+				<label style="color: red;">* </label><label>Password</label>
 			</div>
 			<div class="input-container">
-				<input type="password" id="pswd" size="30" name="Password" onblur="Pswd('pswd')">
+				<input type="password" id="pswd" size="30" name="Password" onblur="Pswd('pswd')" required>
 			</div>
 			<div class="errorAlign">
 				<p id="errorPswd" class="error">Password should be 8 to 15 characters which contain at least one lowercase letter, one uppercase letter, one numeric digit, and one special character</p>
@@ -75,10 +76,10 @@
 		</div>
 		<div class="row">
 			<div class="label">
-				<label>Confirm Password</label>
+				<label style="color: red;">* </label><label>Confirm Password</label>
 			</div>
 			<div class="input-container">
-				<input type="password" id="cpswd" size="30" onblur="CPswd('cpswd')">
+				<input type="password" id="cpswd" size="30" onblur="CPswd('cpswd')" required>
 			</div>
 			<div class="errorAlign">
 				<p id="errorCpswd" class="error">Password did not match</p>
