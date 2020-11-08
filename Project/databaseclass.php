@@ -2,9 +2,9 @@
 class Database
 {
  public	$servername = "localhost";
-public	$username = "root";
-public $password = "";
-public $dbname = "hstworld";
+public	$username = "hstworld";
+public $password = "Huzib@bu1";
+public $dbname = "hstworld_data";
 public $conn;
 
 function __construct()
