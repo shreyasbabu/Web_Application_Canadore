@@ -18,7 +18,7 @@
     <!-- Navigation -->
     <nav class = "navbar navbar-expand-md navbar-light sticky-top welcomePage" style="background-color: #baefff;" >
         <div class = "container-fluid">
-            <a class = "navbar-brand" href ="Home Page.php"> <img src ="images/logo.png" width = "100 px" height = "100 px"></a>
+            <a class = "navbar-brand" href ="index.php"> <img src ="images/logo.png" width = "100 px" height = "100 px"></a>
             <button class = "navbar-toggler" type = "button" data-toggle="collapse" data-target = "#navbarResponsive" aria-controls="navbarResponsive" aria-expanded = "false" 
             aria-label = "Toggle Navigation">
             <span class = "navbar-toggler-icon"></span>
@@ -26,7 +26,7 @@
         <div class = "collapse navbar-collapse" id = "navbarResponsive">
             <ul class = "navbar-nav ml-auto">
                 <li class = "nav-item activ">
-                    <a class = "nav-link" href="Home page.php">Home</a>
+                    <a class = "nav-link" href="index.php">Home</a>
                 </li>
                 <li class = "nav-item activ">
                     <a class = "nav-link" href="aboutus.php">About Us</a>
