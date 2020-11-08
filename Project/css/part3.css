@@ -96,3 +96,14 @@ padding-right: 25px;
     opacity:1;
     right: 0;
 }
+
+.dropdown-menu input {
+    text-align: right;
+    margin-left: -4px;
+    margin-left: 10px;
+}
+.dropdown-menu label {
+    text-align: left;
+    margin-left: 45px;
+    font-weight: 600;
+}
