@@ -5,9 +5,9 @@ require_once("databaseclass.php");
 $object = new Database();
 $conn = $object->get_connection();
 
-$flag = 0;
+$insertflag = 0;
 
-if (isset($_POST)) {
+if (isset($_POST['signupsubmit'])) {
   $firstname = $_POST['FirstName'];
   $lastname = $_POST['LastName'];
   $uusername = $_POST['UserName'];
@@ -25,7 +25,7 @@ if (isset($_POST)) {
     /*$sql = "INSERT INTO `signin`(`FirstName`, `LastName`, `UserName`, `Email`, `PhoneNumber`, `Password`) VALUES ([value-1],[value-2],[value-3],[value-4],[value-5],[value-6])";*/
     if(mysqli_query($conn, $sql))
     {
-      $flag = 0;
+      $insertflag = 0;
     } 
     else{
       echo "ERROR: Could not able to execute $sql. " . mysqli_error($conn);
@@ -33,8 +33,41 @@ if (isset($_POST)) {
   }
   else
   {
-   $flag = 1;
+   $insertflag = 1;
  }
+}
+
+
+$loginflag = 0;
+
+if(isset($_POST['submit']))
+{
+  if(isset($_POST['email']))
+  {
+     $email = $_POST['email']; 
+   }
+  if(isset($_POST['password']))
+    { 
+      $upassword = $_POST['password'];
+      $upassword = sha1($upassword); 
+    }
+
+    $sql = "SELECT * FROM users WHERE (email = '$email' AND password='$upassword')";
+    $result = mysqli_query($conn,$sql);
+    if(mysqli_num_rows($result) > 0)
+    {
+    mysqli_free_result($result);
+    session_start();
+    $_SESSION['email'] = $email;
+    $_SESSION['active'] = 1;
+    header("Location:profile.php");
+    }
+    else
+    {
+    $loginflag = 1;
+    mysqli_free_result($result);
+  }
+
 }
 
 function UserExists($conn,$email)
@@ -75,11 +108,16 @@ $object->close_connection();
 <body>
 
  <?php
- if($flag == 0){
+ if($insertflag == 0){
+  if($loginflag == 0)
+  {
   ?>
       <div class ="align form-message alert alert-success alert-dismissible fade show" role="alert">
       <h1>Registered Sucessfully</h1>
     </div>
+    <?php
+  }
+      ?>
   <?php
   require_once("login.php");
   ?>
@@ -89,7 +127,7 @@ $object->close_connection();
 ?>
 
 <?php 
-if($flag == 1){
+if($insertflag == 1){
   ?>
   <div class="center place-center alert alert-warning alert-dismissible fade show" role="alert">
    <h1 >User Already Exists</h1>
@@ -98,9 +136,6 @@ if($flag == 1){
  <?php
 }
 ?>
-
-
-
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
