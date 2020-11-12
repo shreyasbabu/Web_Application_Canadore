@@ -89,38 +89,34 @@
 
   <!-- Card Component Begins -->
 
-<div class="row justify-content-center">
-    <div class="col-m4-4">
-    <div class="card card-component" style="width: 18rem; justify-content: center;text-align: center;">
-        <img class="card-img-top" src="images/tejas.jpg" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">Tejasv Goel</h5>
-            <p class="card-text font-weight-bold">Developer</p>
-        </div>
-    </div>    
-    </div>
-
-    
-    <div class="col-m4-4" >
-    <div class="card card-component" style="width: 18rem;justify-content: center;text-align: center;">
-        <img class="card-img-top img-size" src="images/shreyas.jpg" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">Shreyas Babu</h5>
-            <p class="card-text font-weight-bold font-weight-bold"> Lead Front End Developer</p>
-            <!--a href="#" class="btn btn-primary">Go somewhere</a-->
-        </div>
-    </div>
-    </div>
+<div class="row justify-content-center" style="padding-top: 20px;">
     <div class="col-m4-4">
     <div class="card card-component" style="width: 18rem; justify-content: center;text-align: center;">
         <img class="card-img-top img-size" src="images/huzaifa.jpg" alt="Card image cap">
         <div class="card-body">
             <h5 class="card-title">Huzaifa Saboowala</h5>
             <p class="card-text font-weight-bold font-weight-bold">Lead Back End Developer</p>
-            <!-- a href="#" class="btn btn-primary">Go somewhere</a -->
         </div>
     </div>
 </div>
+<div class="col-m4-4" >
+    <div class="card card-component" style="width: 18rem;justify-content: center;text-align: center;">
+        <img class="card-img-top img-size" src="images/shreyas.jpg" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">Shreyas Babu</h5>
+            <p class="card-text font-weight-bold font-weight-bold"> Lead Front End Developer</p>
+        </div>
+    </div>
+    </div>
+    <div class="col-m4-4">
+    <div class="card card-component" style="width: 18rem; justify-content: center;text-align: center;">
+        <img class="card-img-top img-size" src="images/tejas.jpg" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">Tejasv Goel</h5>
+            <p class="card-text font-weight-bold">Developer</p>
+        </div>
+    </div>    
+    </div>
 </div>
   <!-- Footer -->
 <footer>

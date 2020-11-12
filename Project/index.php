@@ -158,37 +158,43 @@ session_start();
 
 <!-- Card Component Begins -->
 
-<div class="envelope primary-width">
-
+<div class="row justify-content-center" style="padding-top: 20px;">
+  <div class="col-m4-4">
     <div class="card card-component" style="width: 18rem;">
         <img class="card-img-top img-size" src="images/1.jpg" alt="Card image cap">
         <div class="card-body">
-            <h5 class="card-title">#1777</h5>
-            <p class="card-text font-weight-bold"> $250,000 </p>
+            <h5 class="card-title">The Orchid Bungalow</h5>
+            <p class="card-text font-weight-bold"> $2,500 </p>
+            <button type="button" class="btn btn-warning float-right ml-2">Learn More</button>
             <!--a href="#" class="btn btn-primary">Go somewhere</a-->
         </div>
     </div>
+  </div>
 
+    <div class="col-m4-4">
     <div class="card card-component" style="width: 18rem;">
         <img class="card-img-top img-size" src="images/2.jpg" alt="Card image cap">
         <div class="card-body">
-            <h5 class="card-title">#9667</h5>
-            <p class="card-text font-weight-bold font-weight-bold"> $750,000</p>
+            <h5 class="card-title">Appledor Mansion</h5>
+            <p class="card-text font-weight-bold font-weight-bold"> $7,500</p>
+            <button type="button" class="btn btn-warning float-right ml-2">Learn More</button>
             <!--a href="#" class="btn btn-primary">Go somewhere</a-->
         </div>
+    </div>  
     </div>
 
-    <div class="card card-component" style="width: 18rem;">
+    <div class="col-m4-4">
+      <div class="card card-component" style="width: 18rem;">
         <img class="card-img-top img-size" src="images/3.jpg" alt="Card image cap">
         <div class="card-body">
-            <h5 class="card-title">#2555</h5>
-            <p class="card-text font-weight-bold font-weight-bold"> $550,000</p>
+            <h5 class="card-title">Rivercross Bungalow</h5>
+            <p class="card-text font-weight-bold font-weight-bold"> $5,500</p>
+            <button type="button" class="btn btn-warning float-right ml-2">Learn More</button>
             <!-- a href="#" class="btn btn-primary">Go somewhere</a -->
         </div>
     </div>
-
+    </div>
 </div>
-
 </div>
 <!-- Footer -->
 <footer>
