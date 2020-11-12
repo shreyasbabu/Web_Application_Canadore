@@ -78,7 +78,7 @@ session_start();
           Location
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-      <label class="center">Toranto  <input type="checkbox"> </label>
+      <label class="center">Toronto  <input type="checkbox"> </label>
      <label class="center">Vancover  <input type="checkbox"> </label>
     <label class="center">Montreal  <input type="checkbox"> </label>
 

@@ -78,7 +78,7 @@
           Location
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-      <label class="center">Toranto  <input type="checkbox"> </label>
+      <label class="center">Toronto  <input type="checkbox"> </label>
      <label class="center">Vancover  <input type="checkbox"> </label>
     <label class="center">Montreal  <input type="checkbox"> </label>
 
@@ -131,7 +131,7 @@
       <div class="card card-component" style="width: 18rem;">
         <img class="card-img-top img-sizec" src="images/a1.jpg" alt="Card image cap">
         <div class="card-body">
-            <h6 class="card-title">19 Lagoon Rd , Elsipogtog First Nation, NB, E4W 2V6</h6>
+            <h6 class="card-title">19 Lagoon Rd , Elsipogtog First Nation, NB E4W 2V6</h6>
             <p class="card-text font-weight-bold"> $6,000 </p>
             <!--a href="#" class="btn btn-primary">Go somewhere</a-->
         </div>
@@ -154,20 +154,21 @@
       <div class="card card-component" style="width: 18rem;">
         <img class="card-img-top img-sizec" src="images/a2.jpg" alt="Card image cap">
         <div class="card-body">
-            <h6 class="card-title">St Andrews Lane Parksville BC V9P 2M5</h6>
-            <p class="card-text font-weight-bold"> $440,999 </p>
+            <h6 class="card-title">50–60 Absolute Avenue, Mississauga, ON L925W4 </h6>
+            <p class="card-text font-weight-bold"> $4,000 </p>
             <!--a href="#" class="btn btn-primary">Go somewhere</a-->
         </div>
     </div>
 </div>
 <div class="card-block px-2">
-    <h4 class="card-title">Grace Denny</h4>
-    <p class="card-text">Description<br>Placeholder description for this apartment</p>
-    <button type="button" class="btn btn-warning float-right ml-2">Buy Now</button>
+    <h4 class="card-title">Absolute Towers</h4>
+    <p class="card-text"><h5>Description</h5><br>A 2 BHK spacious apartment in the heart of Mississauga. At a walkable distance from Square One Shopping Centre
+     </p><p> Building provides various amenities like Parking, Swimming Pool, Indoor Activities, Gym and much more. Everything is inclusive!</p>
+   <button type="button" class="btn btn-warning float-right ml-2">Contact Owner	</button>
 </div>
 <div class="w-100"></div>
 <div class="card-footer w-100 text-muted">
-    British Columbia
+    Ontario, Mississauga
 </div>
 </div>
 
@@ -177,15 +178,16 @@
         <img class="card-img-top img-sizec" src="images/a3.jpg" alt="Card image cap">
         <div class="card-body">
             <h6 class="card-title">350 Rue Principale , Lac Bouchette, QC, G0W 1V0</h6>
-            <p class="card-text font-weight-bold"> $690,000 </p>
+            <p class="card-text font-weight-bold"> $9,000 </p>
             <!--a href="#" class="btn btn-primary">Go somewhere</a-->
         </div>
     </div>
 </div>
 <div class="card-block px-2">
-    <h4 class="card-title">G Roy</h4>
-    <p class="card-text">Description<br>Placeholder description for this apartment</p>
-    <button type="button" class="btn btn-warning float-right ml-2">Buy Now</button>
+    <h4 class="card-title">Du Kameleon</h4>
+    <p class="card-text"><h5>Description</h5><br>A Penthouse apartment with all luxurious facilities one could dream about. All supermarkets at a walkable distance plus complimentary delivery
+    	service</p><p> All amenities like Parking, Swimming Pool, Indoor Activities, Gym are present in the house and are available for your use only. Everything is inclusive!</p>
+    <button type="button" class="btn btn-warning float-right ml-2">Contact Owner</button>
 </div>
 <div class="w-100"></div>
 <div class="card-footer w-100 text-muted">
