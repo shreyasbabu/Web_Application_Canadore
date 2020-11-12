@@ -105,7 +105,7 @@
       <div class="col">
         <!-- Menu  -->
         <div class="nav flex-column nav-pills"  role="tablist" aria-orientation="vertical">
-            <a class="nav-link active"   href="apartments.php" aria-selected="true" width="30%">Apartments</a>
+            <a class="nav-link"   href="apartments.php" aria-selected="false" width="30%">Apartments</a>
             <a class="nav-link"    href="Condos.php" role="tab"  aria-selected="false">Condos</a>
             <a class="nav-link"    href="Town House.php" role="tab"  aria-selected="false">Town House</a>
             <a class="nav-link"    href="Rooms.php" role="tab"  aria-selected="false">Rooms</a>

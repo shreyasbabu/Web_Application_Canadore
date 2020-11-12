@@ -129,18 +129,19 @@
  <div class="card flex-row flex-wrap">
     <div class="card-header border-0">
       <div class="card card-component" style="width: 18rem;">
-        <img class="card-img-top img-size" src="images/a1.jpg" alt="Card image cap">
+        <img class="card-img-top img-sizec" src="images/a1.jpg" alt="Card image cap">
         <div class="card-body">
             <h6 class="card-title">19 Lagoon Rd , Elsipogtog First Nation, NB, E4W 2V6</h6>
-            <p class="card-text font-weight-bold"> $660,000 </p>
+            <p class="card-text font-weight-bold"> $6,000 </p>
             <!--a href="#" class="btn btn-primary">Go somewhere</a-->
         </div>
     </div>
 </div>
 <div class="card-block px-2">
-    <h4 class="card-title">Michael Landry</h4>
-    <p class="card-text">Description<br>Placeholder description for this apartment</p>
-    <button type="button" class="btn btn-warning float-right">Buy Now</button>
+    <h4 class="card-title">Royal Enfield Place</h4>
+    <p class="card-text"><h5>Description</h5><br>A 3 BHK spacious apartment with outstanding view.</p><p> Building provides various amenities like Parking, Swimming Pool, Indoor Activities,
+   Gym and much more. Everything is inclusive!</p>
+    <button type="button" class="btn btn-warning float-right">Contact Owner</button>
 </div>
 <div class="w-100"></div>
 <div class="card-footer w-100 text-muted">
@@ -151,7 +152,7 @@
  <div class="card flex-row flex-wrap">
     <div class="card-header border-0">
       <div class="card card-component" style="width: 18rem;">
-        <img class="card-img-top img-size" src="images/a2.jpg" alt="Card image cap">
+        <img class="card-img-top img-sizec" src="images/a2.jpg" alt="Card image cap">
         <div class="card-body">
             <h6 class="card-title">St Andrews Lane Parksville BC V9P 2M5</h6>
             <p class="card-text font-weight-bold"> $440,999 </p>
@@ -173,7 +174,7 @@
  <div class="card flex-row flex-wrap">
     <div class="card-header border-0">
       <div class="card card-component" style="width: 18rem;">
-        <img class="card-img-top img-size" src="images/a3.jpg" alt="Card image cap">
+        <img class="card-img-top img-sizec" src="images/a3.jpg" alt="Card image cap">
         <div class="card-body">
             <h6 class="card-title">350 Rue Principale , Lac Bouchette, QC, G0W 1V0</h6>
             <p class="card-text font-weight-bold"> $690,000 </p>
