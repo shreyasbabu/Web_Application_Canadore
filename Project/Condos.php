@@ -138,8 +138,8 @@
 </div>
 <div class="card-block px-2">
     <h4 class="card-title">Merlton Yonge</h4>
-    <p class="card-text"><h5>Description</h5><br>A beautiful 1 BHK Condo with an outstanding view of Yonge river.</p><p> Various amenities like Parking, Swimming Pool, Indoor Activities, Gym available. All inclusive!<br></p>
-    <button type="button" class="btn btn-warning float-right">Contact Owner</button>
+    <p class="card-text"><h5>Description</h5><br><h6>A beautiful 1 BHK Condo with an outstanding view of Yonge river.</p><p> Various amenities like Parking, Swimming Pool, Indoor Activities, Gym available. All inclusive!<br></p></h6>
+    <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal" data-whatever="Merlton Yonge" data-recipient="Ms. Jen Volkswagen">I'm Interested</button>
 </div>
 <div class="w-100"></div>
 <div class="card-footer w-100 text-muted">
@@ -160,9 +160,9 @@
 </div>
 <div class="card-block px-2">
     <h4 class="card-title">Highland Park</h4>
-    <p class="card-text"><h5>Description</h5><br>A beautiful top storey 3 BHK condo with a private park for children and elders. Best suited for a retirement life.</p><p>Park contains a children area, and a
-    beautiful cycling/jogging track that travels between trees.</p>
-    <button type="button" class="btn btn-warning float-right ml-2">Contact Owner</button>
+    <p class="card-text"><h5>Description</h5><br><h6>A beautiful top storey 3 BHK condo with a private park for children and elders. Best suited for a retirement life.</p><p>Park contains a children area, and a
+    beautiful cycling/jogging track that travels between trees.</p></h6>
+    <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal" data-whatever="Highland Park" data-recipient="Mr. Tim Autonissan">I'm Interested</button>
 </div>
 <div class="w-100"></div>
 <div class="card-footer w-100 text-muted">
@@ -183,8 +183,8 @@
 </div>
 <div class="card-block px-2">
     <h4 class="card-title">Battistella Avenue</h4>
-    <p class="card-text"><h5>Description</h5><br>A beautiful 2 BHK Condo at the centre of Lougheed. At a 10 minute distance from the Airport.</p><p> Various amenities like Parking, Swimming Pool, Indoor Activities, Gym available. All inclusive!<br></p>
-    <button type="button" class="btn btn-warning float-right ml-2">Contact Owner</button>
+    <p class="card-text"><h5>Description</h5><br><h6>A beautiful 2 BHK Condo at the centre of Lougheed. At a 10 minute distance from the Airport.</p><p> Various amenities like Parking, Swimming Pool, Indoor Activities, Gym available. All inclusive!<br></p></h6>
+    <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal" data-whatever="Battistella Avenue" data-recipient="Mr. Harrison Ford">I'm Interested</button>
 </div>
 <div class="w-100"></div>
 <div class="card-footer w-100 text-muted">
@@ -196,6 +196,36 @@
 </div>
 </div>
 </div>
+<!-- Modal -->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Recipient:</label>
+            <input type="text" class="form-control" id="recipient-name" readonly>
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Message:</label>
+            <textarea class="form-control validate" id="message-text">I'm Interested</textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" id="submitButton" >Send message</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- Footer -->
 <footer>
     <div class= "container-fluid padding" style="background-color: #baefff;">
@@ -237,5 +267,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+     <script src="js/modaljs.js"></script>
 </body>
 </html>

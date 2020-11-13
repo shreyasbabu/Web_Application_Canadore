@@ -12,7 +12,6 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
 </head>
 <body style="background-color:black">
     <!-- Navigation -->
@@ -129,7 +128,7 @@
  <div class="card flex-row flex-wrap">
     <div class="card-header border-0">
       <div class="card card-component" style="width: 18rem;">
-        <img class="card-img-top img-sizec" src="images/a1.jpg" alt="Card image cap">
+        <img class="card-img-top img-size" src="images/a1.jpg" alt="Card image cap">
         <div class="card-body">
             <h6 class="card-title">19 Lagoon Rd , Elsipogtog First Nation, NB E4W 2V6</h6>
             <p class="card-text font-weight-bold"> $6,000 </p>
@@ -139,9 +138,9 @@
 </div>
 <div class="card-block px-2">
     <h4 class="card-title">Royal Enfield Place</h4>
-    <p class="card-text"><h5>Description</h5><br>A 3 BHK spacious apartment with outstanding view.</p><p> Building provides various amenities like Parking, Swimming Pool, Indoor Activities,
-   Gym and much more. Everything is inclusive!</p>
-    <button type="button" class="btn btn-warning float-right">Contact Owner</button>
+    <p class="card-text"><h5>Description</h5><br><h6>A 3 BHK spacious apartment with outstanding view.</p><p> Building provides various amenities like Parking, Swimming Pool, Indoor Activities,
+   Gym and much more. Everything is inclusive!</p></h6>
+    <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal" data-whatever="Royal Enfield Place" data-recipient="Mr. Kimono Kawasaki">I'm Interested</button>
 </div>
 <div class="w-100"></div>
 <div class="card-footer w-100 text-muted">
@@ -152,7 +151,7 @@
  <div class="card flex-row flex-wrap">
     <div class="card-header border-0">
       <div class="card card-component" style="width: 18rem;">
-        <img class="card-img-top img-sizec" src="images/a2.jpg" alt="Card image cap">
+        <img class="card-img-top img-size" src="images/a2.jpg" alt="Card image cap">
         <div class="card-body">
             <h6 class="card-title">50–60 Absolute Avenue, Mississauga, ON L925W4 </h6>
             <p class="card-text font-weight-bold"> $4,000 </p>
@@ -162,9 +161,9 @@
 </div>
 <div class="card-block px-2">
     <h4 class="card-title">Absolute Towers</h4>
-    <p class="card-text"><h5>Description</h5><br>A 2 BHK spacious apartment in the heart of Mississauga. At a walkable distance from Square One Shopping Centre
-     </p><p> Building provides various amenities like Parking, Swimming Pool, Indoor Activities, Gym and much more. Everything is inclusive!</p>
-   <button type="button" class="btn btn-warning float-right ml-2">Contact Owner	</button>
+    <p class="card-text"><h5>Description</h5><br><h6>A 2 BHK spacious apartment in the heart of Mississauga. At a walkable distance from Square One Shopping Centre
+     </p><p> Building provides various amenities like Parking, Swimming Pool, Indoor Activities, Gym and much more. Everything is inclusive!</p></h6>
+   <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal" data-whatever="Absolute Towers" data-recipient="Mr. Marvin Ducati">I'm Interested	</button>
 </div>
 <div class="w-100"></div>
 <div class="card-footer w-100 text-muted">
@@ -175,7 +174,7 @@
  <div class="card flex-row flex-wrap">
     <div class="card-header border-0">
       <div class="card card-component" style="width: 18rem;">
-        <img class="card-img-top img-sizec" src="images/a3.jpg" alt="Card image cap">
+        <img class="card-img-top img-size" src="images/a3.jpg" alt="Card image cap">
         <div class="card-body">
             <h6 class="card-title">350 Rue Principale , Lac Bouchette, QC, G0W 1V0</h6>
             <p class="card-text font-weight-bold"> $9,000 </p>
@@ -185,9 +184,9 @@
 </div>
 <div class="card-block px-2">
     <h4 class="card-title">Du Kameleon</h4>
-    <p class="card-text"><h5>Description</h5><br>A Penthouse apartment with all luxurious facilities one could dream about. All supermarkets at a walkable distance plus complimentary delivery
-    	service</p><p> All amenities like Parking, Swimming Pool, Indoor Activities, Gym are present in the house and are available for your use only. Everything is inclusive!</p>
-    <button type="button" class="btn btn-warning float-right ml-2">Contact Owner</button>
+    <p class="card-text"><h5>Description</h5><br><h6>A Penthouse apartment with all luxurious facilities one could dream about. All supermarkets at a walkable distance plus complimentary delivery
+    	service</p><p> All amenities like Parking, Swimming Pool, Indoor Activities, Gym are present in the house and are available for your use only. Everything is inclusive!</p></h6>
+    <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal" data-whatever="Du Kameleon" data-recipient="Mr. Ferocio Lamborghini">I'm Interested</button>
 </div>
 <div class="w-100"></div>
 <div class="card-footer w-100 text-muted">
@@ -199,6 +198,36 @@
 </div>
 </div>
 </div>
+<!-- Modal -->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Recipient:</label>
+            <input type="text" class="form-control" id="recipient-name" readonly>
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Message:</label>
+            <textarea class="form-control validate" id="message-text">I'm Interested</textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" id="submitButton">Send message</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
 <!-- Footer -->
 <footer>
     <div class= "container-fluid padding" style="background-color: #baefff;">
@@ -240,5 +269,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/modaljs.js"></script>
 </body>
 </html>
