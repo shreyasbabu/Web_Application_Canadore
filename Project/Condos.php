@@ -130,16 +130,16 @@
       <div class="card card-component" style="width: 18rem;">
         <img class="card-img-top img-size" src="images/c1.jpg" alt="Card image cap">
         <div class="card-body">
-            <h6 class="card-title">19 Lagoon Rd , Elsipogtog First Nation, NB, E4W 2V6</h6>
-            <p class="card-text font-weight-bold"> $350,000 </p>
+            <h6 class="card-title">2256  Riverview Rd , Moncton City, NB, E1C 1H6</h6>
+            <p class="card-text font-weight-bold"> $3,500 </p>
             <!--a href="#" class="btn btn-primary">Go somewhere</a-->
         </div>
     </div>
 </div>
 <div class="card-block px-2">
-    <h4 class="card-title">Michael Landry</h4>
-    <p class="card-text">Description<br>Placeholder description for this apartment</p>
-    <button type="button" class="btn btn-warning float-right">Buy Now</button>
+    <h4 class="card-title">Merlton Yonge</h4>
+    <p class="card-text"><h5>Description</h5><br>A beautiful 1 BHK Condo with an outstanding view of Yonge river.</p><p> Various amenities like Parking, Swimming Pool, Indoor Activities, Gym available. All inclusive!<br></p>
+    <button type="button" class="btn btn-warning float-right">Contact Owner</button>
 </div>
 <div class="w-100"></div>
 <div class="card-footer w-100 text-muted">
@@ -153,15 +153,16 @@
         <img class="card-img-top img-size" src="images/c2.jpg" alt="Card image cap">
         <div class="card-body">
             <h6 class="card-title">St Andrews Lane Parksville BC V9P 2M5</h6>
-            <p class="card-text font-weight-bold"> $950,000 </p>
+            <p class="card-text font-weight-bold"> $9,500 </p>
             <!--a href="#" class="btn btn-primary">Go somewhere</a-->
         </div>
     </div>
 </div>
 <div class="card-block px-2">
-    <h4 class="card-title">Grace Denny</h4>
-    <p class="card-text">Description<br>Placeholder description for this apartment</p>
-    <button type="button" class="btn btn-warning float-right ml-2">Buy Now</button>
+    <h4 class="card-title">Highland Park</h4>
+    <p class="card-text"><h5>Description</h5><br>A beautiful top storey 3 BHK condo with a private park for children and elders. Best suited for a retirement life.</p><p>Park contains a children area, and a
+    beautiful cycling/jogging track that travels between trees.</p>
+    <button type="button" class="btn btn-warning float-right ml-2">Contact Owner</button>
 </div>
 <div class="w-100"></div>
 <div class="card-footer w-100 text-muted">
@@ -174,20 +175,20 @@
       <div class="card card-component" style="width: 18rem;">
         <img class="card-img-top img-size" src="images/c3.jpg" alt="Card image cap">
         <div class="card-body">
-            <h6 class="card-title">350 Rue Principale , Lac Bouchette, QC, G0W 1V0</h6>
-            <p class="card-text font-weight-bold"> $400,000 </p>
+            <h6 class="card-title">38 Bloor Street , Lougheed, AB, T0B 2V0</h6>
+            <p class="card-text font-weight-bold"> $4,000 </p>
             <!--a href="#" class="btn btn-primary">Go somewhere</a-->
         </div>
     </div>
 </div>
 <div class="card-block px-2">
-    <h4 class="card-title">G Roy</h4>
-    <p class="card-text">Description<br>Placeholder description for this apartment</p>
-    <button type="button" class="btn btn-warning float-right ml-2">Buy Now</button>
+    <h4 class="card-title">Battistella Avenue</h4>
+    <p class="card-text"><h5>Description</h5><br>A beautiful 2 BHK Condo at the centre of Lougheed. At a 10 minute distance from the Airport.</p><p> Various amenities like Parking, Swimming Pool, Indoor Activities, Gym available. All inclusive!<br></p>
+    <button type="button" class="btn btn-warning float-right ml-2">Contact Owner</button>
 </div>
 <div class="w-100"></div>
 <div class="card-footer w-100 text-muted">
-    Quebec
+    Alberta
 </div>
 </div>
 </div>
