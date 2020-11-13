@@ -138,7 +138,7 @@
 </div>
 <div class="card-block px-2">
     <h4 class="card-title">Michael Landry</h4>
-    <p class="card-text">Description<br>Placeholder description for this apartment</p>
+    <p class="card-text"><h5>Description</h5><br>A big and bright 3 bedroom and 2 bathrooms in the heard of New Brunswick.</p><p> The town House is in a closed community where you and your family can lead a happy life.</p>
     <button type="button" class="btn btn-warning float-right">Buy Now</button>
 </div>
 <div class="w-100"></div>
@@ -160,7 +160,7 @@
 </div>
 <div class="card-block px-2">
     <h4 class="card-title">Grace Denny</h4>
-    <p class="card-text">Description<br>Placeholder description for this apartment</p>
+    <p class="card-text"><h5>Description</h5><br>The House is situated in the beating heart of parksville. it is a beautiful 4 bedroom and 3 bathrom town house.</p><p> This is a perfect town house for a larger family as it is conveniently located near schools and parks.</p>
     <button type="button" class="btn btn-warning float-right ml-2">Buy Now</button>
 </div>
 <div class="w-100"></div>
@@ -182,7 +182,7 @@
 </div>
 <div class="card-block px-2">
     <h4 class="card-title">G Roy</h4>
-    <p class="card-text">Description<br>Placeholder description for this apartment</p>
+    <p class="card-text"><h5>Description</h5><br>The Town house is located in Bouchette. It has 2 bedrooms and 2 bathrooms. The living rooms is built in with a fully decked fire place.</p><p> There is easy access to public transportation and the supermarket is just minutes away from the house.</p>
     <button type="button" class="btn btn-warning float-right ml-2">Buy Now</button>
 </div>
 <div class="w-100"></div>

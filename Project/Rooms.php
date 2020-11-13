@@ -136,7 +136,7 @@
 </div>
 <div class="card-block px-2">
     <h4 class="card-title">Michael Landry</h4>
-    <p class="card-text">Description<br>Placeholder description for this apartment</p>
+    <p class="card-text"><h5>Description</h5><br>This is a very spacious room in a large 4 bedroom townhouse. it comes with a attached bathroom. </p><p> the living room and the kitchen are shared with three other people residing in the house.</p>
     <button type="button" class="btn btn-warning float-right">Buy Now</button>
 </div>
 <div class="w-100"></div>
@@ -158,7 +158,7 @@
 </div>
 <div class="card-block px-2">
     <h4 class="card-title">Grace Denny</h4>
-    <p class="card-text">Description<br>Placeholder description for this apartment</p>
+    <p class="card-text"><h5>Description</h5><br>The room is part of a 2 bedroom 1 bathroom apartment. It is shared with one other working professional.</p><p> The location of the house is very conviently situated near Grimsley College and is perfect for current students of the college.</p>
     <button type="button" class="btn btn-warning float-right ml-2">Buy Now</button>
 </div>
 <div class="w-100"></div>
@@ -180,7 +180,7 @@
 </div>
 <div class="card-block px-2">
     <h4 class="card-title">G Roy</h4>
-    <p class="card-text">Description<br>Placeholder description for this apartment</p>
+    <p class="card-text"><h5>Description</h5><br>The room is sittuated on the 13th floor of the apartment building. it have a balcony with a graat view.</p><p> the common areas are shared with 2 other people and the rent is inclusive of all expenses.</p>
     <button type="button" class="btn btn-warning float-right ml-2">Buy Now</button>
 </div>
 <div class="w-100"></div>
