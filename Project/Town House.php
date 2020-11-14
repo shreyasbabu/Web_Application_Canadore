@@ -130,20 +130,20 @@
       <div class="card card-component" style="width: 18rem;">
         <img class="card-img-top img-size" src="images/t1.jpg" alt="Card image cap">
         <div class="card-body">
-            <h6 class="card-title">19 Lagoon Rd , Elsipogtog First Nation, NB, E4W 2V6</h6>
-            <p class="card-text font-weight-bold"> $250,000 </p>
+            <h6 class="card-title">463 Joliette Rue , Longueuil, QC, J4K 4V2</h6>
+            <p class="card-text font-weight-bold"> $5,500</p>
             <!--a href="#" class="btn btn-primary">Go somewhere</a-->
         </div>
     </div>
 </div>
 <div class="card-block px-2">
-    <h4 class="card-title">Michael Landry</h4>
-    <p class="card-text"><h5>Description</h5><br>A big and bright 3 bedroom and 2 bathrooms in the heard of New Brunswick.</p><p> The town House is in a closed community where you and your family can lead a happy life.</p>
-   <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal" data-whatever="Absolute Towers" data-recipient="Mr. Marvin Ducati">I'm Interested	</button>
+    <h4 class="card-title">Ecuyer Francois</h4>
+    <p class="card-text"><h5>Description</h5><br><h6>A big and bright 3 bedroom and 2 bathrooms in the heard of New Brunswick.</p><p> The town House is in a closed community where you and your family can lead a happy life.</p></h6>
+   <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal" data-whatever="Ecuyer Francois" data-recipient="Mrs. Margaret Hinkle">I'm Interested	</button>
 </div>
 <div class="w-100"></div>
 <div class="card-footer w-100 text-muted">
-    New Brunswick
+    Quebec
 </div>
 </div>
 
@@ -152,20 +152,20 @@
       <div class="card card-component" style="width: 18rem;">
         <img class="card-img-top img-size" src="images/t2.jpg" alt="Card image cap">
         <div class="card-body">
-            <h6 class="card-title">St Andrews Lane Parksville BC V9P 2M5</h6>
-            <p class="card-text font-weight-bold"> $550,000 </p>
+            <h6 class="card-title">9022 Scurfield Dr NW , Calgary, AB, T3L 1V4</h6>
+            <p class="card-text font-weight-bold"> $7,990 </p>
             <!--a href="#" class="btn btn-primary">Go somewhere</a-->
         </div>
     </div>
 </div>
 <div class="card-block px-2">
-    <h4 class="card-title">Grace Denny</h4>
-    <p class="card-text"><h5>Description</h5><br>The House is situated in the beating heart of parksville. it is a beautiful 4 bedroom and 3 bathrom town house.</p><p> This is a perfect town house for a larger family as it is conveniently located near schools and parks.</p>
-   <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal" data-whatever="Absolute Towers" data-recipient="Mr. Marvin Ducati">I'm Interested	</button>
+    <h4 class="card-title">Rick Gerber</h4>
+    <p class="card-text"><h5>Description</h5><br><h6>The House is situated in the beating heart of parksville. it is a beautiful 4 bedroom and 3 bathrom town house.</p><p> This is a perfect town house for a larger family as it is conveniently located near schools and parks.</p></h6>
+   <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal" data-whatever="Rick Gerber" data-recipient="Mr. Lester Dunn">I'm Interested	</button>
 </div>
 <div class="w-100"></div>
 <div class="card-footer w-100 text-muted">
-    British Columbia
+    Alberta
 </div>
 </div>
 
@@ -174,20 +174,20 @@
       <div class="card card-component" style="width: 18rem;">
         <img class="card-img-top img-size" src="images/t3.png" alt="Card image cap">
         <div class="card-body">
-            <h6 class="card-title">350 Rue Principale , Lac Bouchette, QC, G0W 1V0</h6>
-            <p class="card-text font-weight-bold"> $700,000 </p>
+            <h6 class="card-title">NW 18 21 10W , Alonsa, MB, R0H</h6>
+            <p class="card-text font-weight-bold"> $2,000 </p>
             <!--a href="#" class="btn btn-primary">Go somewhere</a-->
         </div>
     </div>
 </div>
 <div class="card-block px-2">
-    <h4 class="card-title">G Roy</h4>
-    <p class="card-text"><h5>Description</h5><br>The Town house is located in Bouchette. It has 2 bedrooms and 2 bathrooms. The living rooms is built in with a fully decked fire place.</p><p> There is easy access to public transportation and the supermarket is just minutes away from the house.</p>
-    <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal" data-whatever="Absolute Towers" data-recipient="Mr. Marvin Ducati">I'm Interested	</button>
+    <h4 class="card-title">Guillaume De Billy</h4>
+    <p class="card-text"><h5>Description</h5><br><h6>The Town house is located in Bouchette. It has 2 bedrooms and 2 bathrooms. The living rooms is built in with a fully decked fire place.</p><p> There is easy access to public transportation and the supermarket is just minutes away from the house.</p></h6>
+    <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal" data-whatever="Guillaume De Billy" data-recipient="Mrs. Khaleesi Lutz">I'm Interested	</button>
 </div>
 <div class="w-100"></div>
 <div class="card-footer w-100 text-muted">
-    Quebec
+    Manitoba
 </div>
 </div>
 </div>

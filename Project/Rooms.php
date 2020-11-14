@@ -128,20 +128,20 @@
       <div class="card card-component" style="width: 18rem;">
         <img class="card-img-top img-size" src="images/r1.jpg" alt="Card image cap">
         <div class="card-body">
-            <h6 class="card-title">19 Lagoon Rd , Elsipogtog First Nation, NB, E4W 2V6</h6>
+            <h6 class="card-title">15 De Cookshire , Cookshire Eaton, QC, J0B</h6>
             <p class="card-text font-weight-bold"> $900 </p>
             <!--a href="#" class="btn btn-primary">Go somewhere</a-->
         </div>
     </div>
 </div>
 <div class="card-block px-2">
-    <h4 class="card-title">Michael Landry</h4>
-    <p class="card-text"><h5>Description</h5><br>This is a very spacious room in a large 4 bedroom townhouse. it comes with a attached bathroom. </p><p> the living room and the kitchen are shared with three other people residing in the house.</p>
-    <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal" data-whatever="Absolute Towers" data-recipient="Mr. Marvin Ducati">I'm Interested </button>
+    <h4 class="card-title">Joelle Lortie</h4>
+    <p class="card-text"><h5>Description</h5><br><h6>This is a very spacious room in a large 4 bedroom townhouse. it comes with a attached bathroom. </p><p> the living room and the kitchen are shared with three other people residing in the house.</p></h6>
+    <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal" data-whatever="Joelle Lortie" data-recipient="Mr.Wayne Osterhout">I'm Interested </button>
 </div>
 <div class="w-100"></div>
 <div class="card-footer w-100 text-muted">
-    New Brunswick
+    Quebec
 </div>
 </div>
 
@@ -150,20 +150,20 @@
       <div class="card card-component" style="width: 18rem;">
         <img class="card-img-top img-size" src="images/r2.jpg" alt="Card image cap">
         <div class="card-body">
-            <h6 class="card-title">St Andrews Lane Parksville BC V9P 2M5</h6>
+            <h6 class="card-title">9728 109 St Westlock AB T7P 1P9</h6>
             <p class="card-text font-weight-bold"> $1200 </p>
             <!--a href="#" class="btn btn-primary">Go somewhere</a-->
         </div>
     </div>
 </div>
 <div class="card-block px-2">
-    <h4 class="card-title">Grace Denny</h4>
-    <p class="card-text"><h5>Description</h5><br>The room is part of a 2 bedroom 1 bathroom apartment. It is shared with one other working professional.</p><p> The location of the house is very conviently situated near Grimsley College and is perfect for current students of the College.</p>
-    <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal" data-whatever="Absolute Towers" data-recipient="Mr. Marvin Ducati">I'm Interested </button>
+    <h4 class="card-title">William Bremner</h4>
+    <p class="card-text"><h5>Description</h5><br><h6>The room is part of a 2 bedroom 1 bathroom apartment. It is shared with one other working professional.</p><p> The location of the house is very conviently situated near Grimsley College and is perfect for current students of the College.</p></h6>
+    <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal" data-whatever="William Bremner" data-recipient="Mr. Margaret Hinkle">I'm Interested </button>
 </div>
 <div class="w-100"></div>
 <div class="card-footer w-100 text-muted">
-    British Columbia
+    Alberta
 </div>
 </div>
 
@@ -172,20 +172,20 @@
       <div class="card card-component" style="width: 18rem;">
         <img class="card-img-top img-size" src="images/r3.jpg" alt="Card image cap">
         <div class="card-body">
-            <h6 class="card-title">350 Rue Principale , Lac Bouchette, QC, G0W 1V0</h6>
+            <h6 class="card-title">899 Stone Church Rd E 14 Hamilton ON L8W 1B2</h6>
             <p class="card-text font-weight-bold"> $700 </p>
             <!--a href="#" class="btn btn-primary">Go somewhere</a-->
         </div>
     </div>
 </div>
 <div class="card-block px-2">
-    <h4 class="card-title">G Roy</h4>
-    <p class="card-text"><h5>Description</h5><br>The room is sittuated on the 13th floor of the apartment building. it have a balcony with a graat view.</p><p> the common areas are shared with 2 other people and the rent is inclusive of all expenses.</p>
-    <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal" data-whatever="Absolute Towers" data-recipient="Mr. Marvin Ducati">I'm Interested </button>
+    <h4 class="card-title">Gerry Jober</h4>
+    <p class="card-text"><h5>Description</h5><br><h6>The room is sittuated on the 13th floor of the apartment building. it have a balcony with a graat view.</p><p> the common areas are shared with 2 other people and the rent is inclusive of all expenses.</p></h6>
+    <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal" data-whatever="Gerry Jober" data-recipient="Mr. David Smith">I'm Interested </button>
 </div>
 <div class="w-100"></div>
 <div class="card-footer w-100 text-muted">
-    Quebec
+    Ontario
 </div>
 </div>
 </div>
