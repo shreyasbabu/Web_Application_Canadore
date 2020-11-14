@@ -158,7 +158,7 @@
 </div>
 <div class="card-block px-2">
     <h4 class="card-title">Grace Denny</h4>
-    <p class="card-text"><h5>Description</h5><br>The room is part of a 2 bedroom 1 bathroom apartment. It is shared with one other working professional.</p><p> The location of the house is very conviently situated near Grimsley College and is perfect for current students of the college.</p>
+    <p class="card-text"><h5>Description</h5><br>The room is part of a 2 bedroom 1 bathroom apartment. It is shared with one other working professional.</p><p> The location of the house is very conviently situated near Grimsley College and is perfect for current students of the College.</p>
     <button type="button" class="btn btn-warning float-right ml-2">Buy Now</button>
 </div>
 <div class="w-100"></div>
