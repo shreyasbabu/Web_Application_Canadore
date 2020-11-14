@@ -137,7 +137,7 @@
 <div class="card-block px-2">
     <h4 class="card-title">Michael Landry</h4>
     <p class="card-text"><h5>Description</h5><br>This is a very spacious room in a large 4 bedroom townhouse. it comes with a attached bathroom. </p><p> the living room and the kitchen are shared with three other people residing in the house.</p>
-    <button type="button" class="btn btn-warning float-right">Buy Now</button>
+    <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal" data-whatever="Absolute Towers" data-recipient="Mr. Marvin Ducati">I'm Interested </button>
 </div>
 <div class="w-100"></div>
 <div class="card-footer w-100 text-muted">
@@ -159,7 +159,7 @@
 <div class="card-block px-2">
     <h4 class="card-title">Grace Denny</h4>
     <p class="card-text"><h5>Description</h5><br>The room is part of a 2 bedroom 1 bathroom apartment. It is shared with one other working professional.</p><p> The location of the house is very conviently situated near Grimsley College and is perfect for current students of the College.</p>
-    <button type="button" class="btn btn-warning float-right ml-2">Buy Now</button>
+    <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal" data-whatever="Absolute Towers" data-recipient="Mr. Marvin Ducati">I'm Interested </button>
 </div>
 <div class="w-100"></div>
 <div class="card-footer w-100 text-muted">
@@ -181,7 +181,7 @@
 <div class="card-block px-2">
     <h4 class="card-title">G Roy</h4>
     <p class="card-text"><h5>Description</h5><br>The room is sittuated on the 13th floor of the apartment building. it have a balcony with a graat view.</p><p> the common areas are shared with 2 other people and the rent is inclusive of all expenses.</p>
-    <button type="button" class="btn btn-warning float-right ml-2">Buy Now</button>
+    <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal" data-whatever="Absolute Towers" data-recipient="Mr. Marvin Ducati">I'm Interested </button>
 </div>
 <div class="w-100"></div>
 <div class="card-footer w-100 text-muted">
@@ -192,6 +192,35 @@
 
 </div>
 </div>
+</div>
+<!-- Modal -->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Recipient:</label>
+            <input type="text" class="form-control" id="recipient-name" readonly>
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Message:</label>
+            <textarea class="form-control validate" id="message-text">I'm Interested</textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" id="submitButton">Send message</button>
+      </div>
+    </div>
+  </div>
 </div>
 <!-- Footer -->
 <footer>
@@ -234,5 +263,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+     <script src="js/modaljs.js"></script>
 </body>
 </html>
