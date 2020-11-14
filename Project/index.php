@@ -104,7 +104,7 @@ session_start();
       </li>
 </ul>
 <form class="form-inline my-2 my-lg-0">
-    <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
+  <button class="btn btn-success my-2 my-sm-0"> <a class="text-white" href="search.php">Search</a></button>
 </form>
 </div>
 </nav>
